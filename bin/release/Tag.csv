@@ -1,0 +1,5 @@
+TaskName,Period,Unit,StartTime,EndTime,DumpType,Table,TimeExpand,ExColName,ExColValue,ConditionCol,TryInsert
+任务名称,周期,周期单位(月|周|天|时|分|秒),开始时间(设为空表示从下一周期整点开始),结束时间(设为空表示一直运行),转储类型(m多个点写到一行|s每个点写一行),关系库表名(转储类型1使用),时间列名称(为空不转),"扩展列名（多个扩展了以管道符区分""|""）",扩展列值,条件字段(如time|tagname),更新失败时是否插入(是|否)
+Test1,1,分,2013/9/12 08:00:00,2013/10/13 09:00:00,m,Table1,time,,,,是
+Test2,1,秒,2013/9/12 08:00:00,2013/10/13 08:01:00,s,,time,,,,否
+
